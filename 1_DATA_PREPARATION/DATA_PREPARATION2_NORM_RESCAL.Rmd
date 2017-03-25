@@ -1,0 +1,108 @@
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# 1. DATA PREPARATION 2: Normlization and Rescaling
+
+i) Normalize distributions (e.g, log transformation)
+ii) Rescaling features
+
+
+
+```{r echo=FALSE}
+
+## LOAD THE DATA
+
+WD = '/Users/Remi/Dropbox/1_WORK/2015/4_PROJECTS/1_SOFTWARE/IMAGEJ_LIB/CELL SIGNALING ANALYSIS/CODE/2_CLASSIFY/BORDERCELLS/DATA_PREPARATION'
+
+setwd(WD)
+
+d0 <- read.delim("4_data_training.txt")
+
+# exclude the text
+d1 = d0[,1:length(d0)]
+
+
+
+```
+
+
+## 1.1 normal distribution: show histogram 
+
+```{r}
+par(mfrow=c(4,2))
+par(mar = rep(2, 4))
+dd_mtx =data.matrix(d1, rownames.force = NA)
+n_col = dim(dd_mtx)[2]
+for(i in 2:n_col){
+  hist(dd_mtx[,i],100,main=names(d1)[i], cex.axis=1, font.main=1, cex.main=1.3)
+}
+
+```
+
+
+## 1.2 normal distribution: Test log tansformation
+
+```{r}
+par(mfrow=c(4,2))
+par(mar = rep(2, 4))
+dd_mtx =log(data.matrix(d1, rownames.force = NA)+1,2)
+n_col = dim(dd_mtx)[2]
+for(i in 2:n_col){
+  hist(dd_mtx[,i],100,main=names(d1)[i], cex.axis=1, font.main=1, cex.main=1.3)
+}
+
+
+```
+
+
+
+## 1.3 normal distribution: Apply the log transformation
+```{r}
+d2 =d1
+n_col = dim(dd_mtx)[2]
+for(i in 2:n_col){
+  a = d2[,i]
+  d2[,i] =log(a+1,10)
+}
+
+par(mfrow=c(4,2))
+par(mar = rep(2, 4))
+dd_mtx =data.matrix(d2, rownames.force = NA)
+n_col = dim(dd_mtx)[2]
+for(i in 2:n_col){
+  hist(dd_mtx[,i],50,main=names(d2)[i], cex.axis=1, font.main=1, cex.main=1.3)
+}
+
+```
+
+
+
+## 1.4 rescaling (store the mean standard deviation for test and validation)
+```{r}
+
+dd = d2
+FEATURES_MEAN = apply(data.matrix(dd),2,mean)
+FEATURES_STDEV = apply(data.matrix(dd),2,sd)
+for(i in 2:dim(dd)[2]){
+  dd[,i]= (dd[,i] - FEATURES_MEAN[i])/ FEATURES_STDEV[i]
+}
+
+d3 = dd
+dd =data.matrix(dd)
+op <- par(mar = c(0,10,0,0))
+boxplot(dd, horizontal=TRUE, las=2, cex.axis = 1, xlim=c(0,10))
+par(op)
+```
+
+# 1.9 Save: transformed data set and mean and stdev features to be used for testing and cross validation 
+
+```{r}
+
+write.table(d3, file = "5_data_training_transf.txt", sep = "\t", quote=FALSE, row.names=FALSE, col.names = colnames(d3))
+write.table(as.data.frame(FEATURES_MEAN) , file = "6_data_training_param_MEAN.txt", sep = "\t", quote=FALSE, row.names=T)
+write.table(as.data.frame(FEATURES_STDEV), file = "7_data_training_param_STDEV.txt", sep = "\t", quote=FALSE, row.names=T)
+
+```
