@@ -4,14 +4,14 @@ The goal of this classifier is to identify the cells at the edges of the populat
 
 <div style="text-align:center"><img src="./border_cell_example.png" alt="An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red)"> </div>
 
-## [Data preparation 1 (show)](https://cdn.rawgit.com/rempic/High-Throughput-Screening/master/MACHINE-LEARNING-Edge-Cells-classifier/1_DATA_PREPARATION/DATA_PREPARATION1.html)
+## [Data preparation 1 (show)](https://cdn.rawgit.com/rempic/MACHINE-LEARNING-Edge-Cells-classifier/master/1_DATA_PREPARATION/DATA_PREPARATION1.html)
 
 - Clean and Visualize features and relative stats
 - Transform features: substitute values and normalization of absolute values
 - Shuffle and split the data-set in training and test sets
 - Save trainging and test data(cross validation will be performed directly on images)
 
-## [Data preparation 2 (show)](https://cdn.rawgit.com/rempic/High-Throughput-Screening/master/MACHINE-LEARNING-Edge-Cells-classifier/1_DATA_PREPARATION/DATA_PREPARATION2_NORM_RESCAL.html)
+## [Data preparation 2 (show)](https://cdn.rawgit.com/rempic/MACHINE-LEARNING-Edge-Cells-classifier/master/1_DATA_PREPARATION/DATA_PREPARATION2_NORM_RESCAL.html)
 - Normalize distributions (e.g, log transformation)
 - Rescaling features
 - Save: transformed data set, mean and stdev of features to be used for testing and cross validation 
