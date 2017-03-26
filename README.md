@@ -1,6 +1,6 @@
 # Classifier: cells at the edges
 
-The goal of this classifier is to identify the cells at the edges of the population. An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red). In this folder you find the "data preparation", the algorithm for "logistic regression" and "visualization of results"
+The goal of this classifier is to identify the cells at the edges of the population. An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red). In this folder you find the "data preparation" (r code), the code for "machine learning classifier" (MATLAB/octave)
 
 <div style="text-align:center"><img src="./border_cell_example.png" alt="An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red)"> </div>
 
