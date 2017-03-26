@@ -30,20 +30,26 @@ In the sub-folder "1_DATA to 3_DATA" find the files with
 ## [CLASSIFIER: TRAINING](/PIPELINE/)
 the matlab/octave files for the trainign is:
   - m3_TRAINING.m
+
 functions for cost function, sigmoid and predictor are in:
  - 3_LIB
+
 input data files are in:
  - 2_DATA and 3_DATA
+
 output data files in output are in:
  - 4_DATA
 
 ## [CLASSIFIER: TESTING](/PIPELINE/)
 the matlab/octave files for the trainign is:
   - m3_TESTING.m
+
 sigmoid and predictor functions are in:
  - 3_LIB
+
 input data files are in:
  - 2_DATA and 3_DATA
+
 output data files in output are in:
  - 4_DATA
 
