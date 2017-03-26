@@ -59,7 +59,6 @@ output data files in output are in:
 
 
 
-## [Visualization of results](https://cdn.rawgit.com/rempic/High-Throughput-Screening/master/machine_learning_classifiers/BORDERCELLS/)
 
 
 
