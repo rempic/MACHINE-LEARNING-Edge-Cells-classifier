@@ -10,13 +10,13 @@ The goal of this classifier is to identify the cells at the edges of the populat
 - Transform features: substitute values and normalization of absolute values
 - Shuffle and split the data-set in training and test sets
 - Save trainging and test data(cross validation will be performed directly on images)
+- r code: PIPELINE/1_DATA_PREPARATION1.rmd
 
 ## [Data preparation 2 (show)](https://cdn.rawgit.com/rempic/MACHINE-LEARNING-Edge-Cells-classifier/master/PIPELINE/2_DATA_PREPARATION2_NORM_RESCAL.html)
 - Normalize distributions (e.g, log transformation)
 - Rescaling features
 - Save: transformed data set, mean and stdev of features to be used for testing and cross validation 
-
-r code in: 1_DATA_PREPARATION1.rmd, 2_DATA_PREPARATION2_NORM_RESCAL.rmd
+- r code: PIPELINE/2_DATA_PREPARATION2_NORM_RESCAL.rmd
 
 In the sub-folder "1_DATA to 3_DATA" find the files with 
   - original data
