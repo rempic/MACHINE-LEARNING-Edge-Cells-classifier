@@ -6,7 +6,7 @@ The goal of this classifier is to identify the cells at the edges of the populat
 
 Below I show the results from the cross validation performed directly on the image acquisition. The color code indicates to the probability od cells to be at the edge of the population
 
-<div style="text-align:center"><img src="./IMG/CA_24H_NUCL.JPG" alt="An example of cells classified according to their position respect to the edge (color code refers to the probability)"> </div>
+<div style="text-align:center"><img src="./IMG/CA_24H_NUCL.jpg" alt="An example of cells classified according to their position respect to the edge (color code refers to the probability)"> </div>
 
 ## [Data preparation 1 (show)](https://cdn.rawgit.com/rempic/MACHINE-LEARNING-Edge-Cells-classifier/master/PIPELINE/1_DATA_PREPARATION1.html)
 
