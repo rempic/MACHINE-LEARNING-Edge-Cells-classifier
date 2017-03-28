@@ -1,14 +1,12 @@
 # Classifier: cells at the edges
 
-The goal of this classifier is to identify the cells at the edges of the population. An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red). In this folder you find the "data preparation" (r code), the code for "machine learning classifier" (MATLAB/octave). Find below a description of the Pipline prototype
+The goal of this classifier is to identify the cells at the edges of the population. An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red). In this folder you find the "data preparation" (r code), the code for "machine learning classifier" (MATLAB/octave). Find below a description of the pipeline 
 
 <div style="text-align:center"><img src="./border_cell_example.png" alt="An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red)"> </div>
 Figure 1. An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red).
 
-
 Below I show various images and visualizations of the results from the cross validation performed directly on the image acquisition. The color code indicates the probability of cells to be at the edge of the population. The classifier has an accurancy of 95.4%
 
-## Cross validation 1 (3545 cells) 
 <div style="text-align:center"><img src="./IMG/CA_24H_NUCLsmall.jpg" alt="image acquisition used for cross validation"> </div>
 
 Figure 2. Image acquisition used for the classifier cross validation (nucle dna is shown) 
@@ -17,15 +15,7 @@ Figure 2. Image acquisition used for the classifier cross validation (nucle dna 
 
 Figure 3. Visualization of the results from the cross validation performed directly on the image acquisition.  Color code indicates the probability of cells to be at the edge of the population
 
-<div style="text-align:center"><img src="./IMG/CA_24H_SMADsmall.jpg" alt="An example of cells classified according to their position respect to the edge (color code refers to the probability)"> </div>
-Figure 4. Different visualization of the results from the cross validation performed directly on the image acquisition.  Color code indicates the probability of cells to be at the edge of the population
 
-## Cross validation 1 (7543 cells) 
-<div style="text-align:center"><img src="./IMG/CT_24H_small.jpg" alt="image acquisition used for cross validation"> </div>
-Figure 5. Image acquisition used for the classifier cross validation (nucle dna is shown)
-
-<div style="text-align:center"><img src="./IMG/CT_24_YAPsmall.jpg" alt="An example of cells classified according to their position respect to the edge (color code refers to the probability)"> </div>
-Figure 5. Visualization of the results from the cross validation performed directly on the image acquisition.  Color code indicates the probability of cells to be at the edge of the population
 
 
 ## [Data preparation 1 (show)](https://cdn.rawgit.com/rempic/MACHINE-LEARNING-Edge-Cells-classifier/master/PIPELINE/1_DATA_PREPARATION1.html)
@@ -90,6 +80,25 @@ output data files in output are in:
  - 5_DATA
 
 
+
+## Cross validation 1 (3545 cells) 
+<div style="text-align:center"><img src="./IMG/CA_24H_NUCLsmall.jpg" alt="image acquisition used for cross validation"> </div>
+
+Figure 2. Image acquisition used for the classifier cross validation (nucle dna is shown) 
+
+<div style="text-align:center"><img src="./IMG/CA_24H_NUCL.jpg" alt="An example of cells classified according to their position respect to the edge (color code refers to the probability)"> </div>
+
+Figure 3. Visualization of the results from the cross validation performed directly on the image acquisition.  Color code indicates the probability of cells to be at the edge of the population
+
+<div style="text-align:center"><img src="./IMG/CA_24H_SMADsmall.jpg" alt="An example of cells classified according to their position respect to the edge (color code refers to the probability)"> </div>
+Figure 4. Different visualization of the results from the cross validation performed directly on the image acquisition.  Color code indicates the probability of cells to be at the edge of the population
+
+## Cross validation 2 (7543 cells) 
+<div style="text-align:center"><img src="./IMG/CT_24H_small.jpg" alt="image acquisition used for cross validation"> </div>
+Figure 5. Image acquisition used for the classifier cross validation (nucle dna is shown)
+
+<div style="text-align:center"><img src="./IMG/CT_24_YAPsmall.jpg" alt="An example of cells classified according to their position respect to the edge (color code refers to the probability)"> </div>
+Figure 5. Visualization of the results from the cross validation performed directly on the image acquisition.  Color code indicates the probability of cells to be at the edge of the population
 
 
 
