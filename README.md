@@ -4,7 +4,7 @@ The goal of this classifier is to identify the cells at the edges of the populat
 
 <div style="text-align:center"><img src="./border_cell_example.png" alt="An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red)"> </div>
 
-Below I show the results from the cross validation performed directly on the image acquisition. The color code indicates the probability of cells to be at the edge of the population. The classifier has an accurancy of 95.4%
+Below I show various images and visualizations of the results from the cross validation performed directly on the image acquisition. The color code indicates the probability of cells to be at the edge of the population. The classifier has an accurancy of 95.4%
 
 <div style="text-align:center"><img src="./IMG/CA_24H_NUCL.jpg" alt="An example of cells classified according to their position respect to the edge (color code refers to the probability)"> </div>
 
