@@ -1,6 +1,6 @@
-# Classifier: cells at the edges
+# Classifier: cells with free edges
 
-The goal of this classifier is to identify the cells at the edges of the population. An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red). In this folder you find the "data preparation" (r code), the code for "machine learning classifier" (MATLAB/octave). Find below a description of the pipeline 
+The goal of this classifier is to identify the cells with free edges in the High Content images. An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red). In this folder you find the "data preparation" (r code), the code for "machine learning classifier" (MATLAB/octave). Find below a description of the pipeline 
 
 <div style="text-align:center"><img src="./border_cell_example.png" alt="An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red)"> </div>
 Figure 1. An example of cells (nuclei) located at edges of the monolayer is shown below (marked in red).
